@@ -1,0 +1,30 @@
+blog_admin_author_index:
+    path:     /
+    defaults: { _controller: "AdminBundle:Author:index" }
+
+blog_admin_author_show:
+    path:     /{id}/show
+    defaults: { _controller: "AdminBundle:Author:show" }
+
+blog_admin_author_new:
+    path:     /new
+    defaults: { _controller: "AdminBundle:Author:new" }
+
+blog_admin_author_create:
+    path:     /create
+    defaults: { _controller: "AdminBundle:Author:create" }
+    methods:  POST
+
+blog_admin_author_edit:
+    path:     /{id}/edit
+    defaults: { _controller: "AdminBundle:Author:edit" }
+
+blog_admin_author_update:
+    path:     /{id}/update
+    defaults: { _controller: "AdminBundle:Author:update" }
+    methods:  [POST, PUT]
+
+blog_admin_author_delete:
+    path:     /{id}/delete
+    defaults: { _controller: "AdminBundle:Author:delete" }
+    methods:  [POST, DELETE]

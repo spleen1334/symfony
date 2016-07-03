@@ -1,0 +1,17 @@
+
+homepage:
+    path:     /
+    defaults: { _controller: CoreBundle:Post:index }
+    
+blog_core_post_show:
+    path:     /{slug}
+    defaults: { _controller: CoreBundle:Post:show }
+
+blog_core_post_createcomment:
+    path: /{slug}/create-comment
+    defaults: { _controller: CoreBundle:Post:createComment }
+    methods: [POST]
+
+blog_core_author_show:
+    path:     /author/{slug}
+    defaults: { _controller: CoreBundle:Author:show }

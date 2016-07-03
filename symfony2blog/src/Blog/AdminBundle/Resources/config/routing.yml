@@ -1,0 +1,21 @@
+admin_homepage:
+    path:     /hello/{name}
+    defaults: { _controller: AdminBundle:Default:index }
+
+blog_admin_security_login:
+    path: /login
+    defaults: { _controller: AdminBundle:Security:login }
+
+blog_admin_security_logincheck:
+    path: /login_check
+
+blog_admin_security_logout:
+    path: /logout
+
+model_author:
+    resource: "@AdminBundle/Resources/config/routing/author.yml"
+    prefix:   /author
+
+model_post:
+    resource: "@AdminBundle/Resources/config/routing/post.yml"
+    prefix:   /post

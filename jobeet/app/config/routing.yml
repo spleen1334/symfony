@@ -1,0 +1,7 @@
+spleen_jobeet:
+    resource: "@SpleenJobeetBundle/Resources/config/routing.yml"
+    prefix:   /
+    
+homepage:
+    path: /
+    defaults: { _controller: SpleenJobeetBundle:Job:index }

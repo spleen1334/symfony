@@ -1,0 +1,11 @@
+spleen_jobeet_job:
+    resource: "@SpleenJobeetBundle/Resources/config/routing/job.yml"
+    prefix:   /job
+
+spleen_jobeet_homepage:
+    path:     /
+    defaults: { _controller: SpleenJobeetBundle:Job:index }
+
+spleen_jobeet_category:
+    path:     /category/{slug}
+    defaults: { _controller: SpleenJobeetBundle:Category:show }
